@@ -1,0 +1,211 @@
+/* ==========================================================================
+   LITTLE MIRACLE — Memory Book Scene (Phase 11)
+   Interactive Digital Album, Page Flip Spreads & Memory Keepsakes
+   ========================================================================== */
+
+.memorybook-scene {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  min-height: 100vh;
+}
+
+.memorybook-header {
+  text-align: center;
+  max-width: 650px;
+}
+
+.memorybook-badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid var(--color-gold);
+  border-radius: 50px;
+  font-family: var(--font-accent);
+  font-size: 1.1rem;
+  color: var(--color-gold-dark);
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.memorybook-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  color: var(--color-dark-brown);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Hardcover Album Container */
+.album-book-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  background: #FFFDF9;
+  border: 2px solid var(--color-gold);
+  border-radius: 28px;
+  box-shadow: 0 25px 60px rgba(44, 34, 30, 0.15), inset 0 0 25px rgba(212, 175, 55, 0.1);
+  padding: 2.5rem;
+  overflow: hidden;
+}
+
+/* Open Book Page Spread */
+.album-page-spread {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 380px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .album-page-spread {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+/* Left Page (Photo Frame) */
+.album-left-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .album-left-page {
+    width: 50%;
+    padding-right: 1.5rem;
+    border-right: 1px dashed rgba(212, 175, 55, 0.3);
+  }
+}
+
+.album-photo-frame {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 260px;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: rotate(-1.5deg);
+  transition: transform 0.4s var(--transition-smooth);
+}
+
+.album-photo-frame:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.album-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Right Page (Story & Caption) */
+.album-right-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .album-right-page {
+    width: 50%;
+    padding-left: 1.5rem;
+  }
+}
+
+.album-page-date {
+  font-family: var(--font-accent);
+  font-size: 1.1rem;
+  color: var(--color-gold-dark);
+  font-style: italic;
+}
+
+.album-page-title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--color-dark-brown);
+  font-weight: 700;
+  margin: 0.3rem 0 0.8rem 0;
+}
+
+.album-page-text {
+  font-family: var(--font-accent);
+  font-size: 1.3rem;
+  color: var(--color-text-main);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Page Navigation Bar */
+.album-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.album-nav-btn {
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  background: var(--bg-card);
+  border: 1px solid var(--color-gold);
+  color: var(--color-dark-brown);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s;
+}
+
+.album-nav-btn:hover {
+  background: var(--color-gold);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.album-page-indicator {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-soft-brown);
+}
+
+/* Navigation CTA */
+.memorybook-cta-btn {
+  padding: 1.1rem 2.8rem;
+  background: linear-gradient(135deg, #D4AF37 0%, #B89228 100%);
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s var(--transition-smooth);
+  margin-top: 1rem;
+}
+
+.memorybook-cta-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(212, 175, 55, 0.6);
+}

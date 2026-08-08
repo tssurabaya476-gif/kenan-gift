@@ -1,0 +1,173 @@
+/* ==========================================================================
+   LITTLE MIRACLE — Ending Scene (Phase 12 Finale)
+   Grand Celebration Finale, Confetti Burst, Replay & Share Controls
+   ========================================================================== */
+
+.ending-scene {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  min-height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.ending-badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid var(--color-gold);
+  border-radius: 50px;
+  font-family: var(--font-accent);
+  font-size: 1.1rem;
+  color: var(--color-gold-dark);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.ending-card {
+  width: 100%;
+  max-width: 750px;
+  padding: 4rem 3rem;
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-gold);
+  border-radius: 32px;
+  box-shadow: 0 30px 80px rgba(108, 91, 76, 0.15), inset 0 0 30px rgba(212, 175, 55, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.ending-emblem {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #FFFDF9 0%, #F5E6D3 100%);
+  border: 2px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+  animation: endingPulse 3s infinite ease-in-out alternate;
+}
+
+@keyframes endingPulse {
+  0% { transform: scale(1); box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4); }
+  100% { transform: scale(1.08); box-shadow: 0 16px 45px rgba(212, 175, 55, 0.6); }
+}
+
+.ending-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  color: var(--color-dark-brown);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.ending-title span {
+  color: var(--color-gold-dark);
+  font-style: italic;
+  font-family: var(--font-accent);
+}
+
+.ending-quote {
+  font-family: var(--font-accent);
+  font-size: 1.6rem;
+  color: var(--color-soft-brown);
+  font-style: italic;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.ending-actions-grid {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.ending-action-btn {
+  padding: 1.1rem 2.2rem;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary-gold {
+  background: linear-gradient(135deg, #D4AF37 0%, #B89228 100%);
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+}
+
+.btn-primary-gold:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(212, 175, 55, 0.6);
+}
+
+.btn-secondary-glass {
+  background: #FFFFFF;
+  color: var(--color-dark-brown);
+  border: 1px solid var(--color-gold);
+}
+
+.btn-secondary-glass:hover {
+  background: var(--color-gold-light);
+  transform: translateY(-3px);
+}
+
+/* Toast Notification */
+.ending-toast {
+  position: fixed;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  padding: 1rem 2rem;
+  background: var(--color-dark-brown);
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  z-index: 30000;
+  opacity: 0;
+  transition: all 0.4s var(--transition-smooth);
+}
+
+.ending-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Studio Credit Mark */
+.ending-credit {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  color: var(--color-text-muted, rgba(255,255,255,0.55));
+  opacity: 0.75;
+}
+
+.ending-credit strong {
+  color: var(--color-gold, #d4af37);
+  font-weight: 600;
+}

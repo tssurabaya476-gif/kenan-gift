@@ -1,0 +1,205 @@
+/* ==========================================================================
+   LITTLE MIRACLE — Milestone Scene (Phase 10)
+   Physical Stats, Skill Achievements Checklist & Favorites Cards
+   ========================================================================== */
+
+.milestone-scene {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  min-height: 100vh;
+}
+
+.milestone-header {
+  text-align: center;
+  max-width: 650px;
+}
+
+.milestone-badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid var(--color-gold);
+  border-radius: 50px;
+  font-family: var(--font-accent);
+  font-size: 1.1rem;
+  color: var(--color-gold-dark);
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.milestone-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  color: var(--color-dark-brown);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Stats Overview Grid */
+.milestone-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.8rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.stat-overview-card {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.35s var(--transition-smooth);
+}
+
+.stat-overview-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-luxury);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-gold-dark);
+}
+
+.stat-name {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-top: 0.2rem;
+}
+
+/* Skills Checklist Section */
+.milestone-skills-wrapper {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 253, 249, 0.8);
+  border: 1px solid var(--glass-border);
+  border-radius: 26px;
+  padding: 2.5rem 2rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.skills-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--color-dark-brown);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+}
+
+.skill-item-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.skill-check {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.skill-label {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-dark-brown);
+}
+
+/* Favorites Section Grid */
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.favorite-card {
+  padding: 1.8rem 1.5rem;
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.favorite-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.favorite-category {
+  font-family: var(--font-accent);
+  font-size: 1rem;
+  color: var(--color-gold-dark);
+  font-style: italic;
+}
+
+.favorite-item-name {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--color-dark-brown);
+  font-weight: 700;
+  margin-top: 0.2rem;
+}
+
+/* Navigation CTA */
+.milestone-cta-btn {
+  padding: 1.1rem 2.8rem;
+  background: linear-gradient(135deg, #D4AF37 0%, #B89228 100%);
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s var(--transition-smooth);
+  margin-top: 1rem;
+}
+
+.milestone-cta-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(212, 175, 55, 0.6);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Miracle — Perayaan Selamat 7 Bulan Kenan (Keponakan Tersayang)</title>
+  <meta name="author" content="HiWi Digital Studio">
+  <meta name="description" content="Hadiah digital interaktif dari Tante untuk perayaan 7 bulan keponakan kesayangan, Muhammad Kenan Zafier Alfatih.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/opening.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/video.css">
+  <link rel="stylesheet" href="css/milestone.css">
+  <link rel="stylesheet" href="css/ending.css">
+
+  <!-- GSAP Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+</head>
+<body>
+
+  <!-- Floating Audio Controls -->
+  <button id="audio-toggle" class="audio-control-btn" aria-label="Putar Musik">
+    🎵
+  </button>
+
+  <!-- Particle Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Main Container for Scenes (Adegan 01 - 08) -->
+  <main id="app-root">
+    
+    <!-- Adegan 01 — Loader -->
+    <section id="scene-loader" class="loader-scene scene-section">
+      <div class="glass-card" style="padding: 3rem; text-align: center;">
+        <h1 class="heading-luxury">Little Miracle</h1>
+        <p class="subheading-gold">Menyiapkan ucapan spesial dari Tante...</p>
+      </div>
+    </section>
+
+    <!-- Adegan 02 — Opening -->
+    <section id="scene-opening" class="opening-scene scene-section" style="display: none;"></section>
+
+    <!-- Adegan 03 — Hero Baby -->
+    <section id="scene-hero" class="hero-scene scene-section" style="display: none;"></section>
+
+    <!-- Adegan 04 — Journey Timeline -->
+    <section id="scene-timeline" class="timeline-scene scene-section" style="display: none;"></section>
+
+    <!-- Adegan 05 — Gallery -->
+    <section id="scene-gallery" class="gallery-scene scene-section" style="display: none;"></section>
+
+    <!-- Adegan 06 — Video Memories -->
+    <section id="scene-video" class="video-scene scene-section" style="display: none;"></section>
+
+    <!-- Adegan 07 — Milestones -->
+    <section id="scene-milestone" class="milestone-scene scene-section" style="display: none;"></section>
+
+    <!-- Adegan 08 — Ending -->
+    <section id="scene-ending" class="ending-scene scene-section" style="display: none;"></section>
+
+  </main>
+
+  <!-- JS Engine -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
+

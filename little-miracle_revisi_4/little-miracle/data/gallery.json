@@ -1,0 +1,30 @@
+[
+  {
+    "id": 5,
+    "category": "Momen Video",
+    "title": "Keceriaan Kenan Terekam",
+    "src": "assets/videos/gallery_video_01.mp4",
+    "caption": "Salah satu momen ceria Kenan yang diabadikan dalam video oleh Tante."
+  },
+  {
+    "id": 6,
+    "category": "Momen Video",
+    "title": "Kenan yang Menggemaskan",
+    "src": "assets/videos/gallery_video_02.mp4",
+    "caption": "Tingkah lucu Kenan yang membuat Tante tak berhenti tersenyum."
+  },
+  {
+    "id": 7,
+    "category": "Momen Video",
+    "title": "Bahagia Bersama Kenan",
+    "src": "assets/videos/gallery_video_03.mp4",
+    "caption": "Kebersamaan hangat bersama Kenan yang selalu dinanti Tante."
+  },
+  {
+    "id": 8,
+    "category": "Momen Video",
+    "title": "Cerita Manis Kenan",
+    "src": "assets/videos/gallery_video_04.mp4",
+    "caption": "Rangkaian momen manis Kenan yang menghangatkan hati Tante."
+  }
+]

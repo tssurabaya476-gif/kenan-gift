@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "category": "Video",
+    "title": "Tawa Renyah Kenan Bikin Tante Gemas",
+    "duration": "0:10",
+    "src": "assets/videos/video_01.mp4",
+    "thumbnail": "assets/photos/thumb_video_01.jpg",
+    "caption": "Momen lucu Kenan tertawa riang saat bercanda bersama Tante & Keluarga"
+  },
+  {
+    "id": 2,
+    "category": "Video",
+    "title": "Kenan Asyik Bermain",
+    "duration": "0:13",
+    "src": "assets/videos/video_02.mp4",
+    "thumbnail": "assets/photos/thumb_video_02.jpg",
+    "caption": "Keseruan Kenan bermain yang selalu bikin Tante gemas melihatnya"
+  },
+  {
+    "id": 3,
+    "category": "Video",
+    "title": "Senyum Ceria Kenan",
+    "duration": "0:14",
+    "src": "assets/videos/video_03.mp4",
+    "thumbnail": "assets/photos/thumb_video_03.jpg",
+    "caption": "Senyum ceria Kenan yang menghangatkan hati Tante dan keluarga"
+  }
+]

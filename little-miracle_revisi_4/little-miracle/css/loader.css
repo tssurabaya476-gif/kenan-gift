@@ -1,0 +1,152 @@
+/* ==========================================================================
+   LITTLE MIRACLE — Loader Scene (Phase 03)
+   Luxury Glassmorphic Loader with Champagne Gold Progress Bar & Reveal CTA
+   ========================================================================== */
+
+.loader-scene {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #FFFDF9 0%, #FAF5EC 60%, #F5EAD7 100%);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.loader-card {
+  position: relative;
+  width: 90%;
+  max-width: 480px;
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 28px;
+  box-shadow: 0 25px 60px rgba(110, 93, 76, 0.12), inset 0 0 20px rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Emblem / Crown Icon */
+.loader-emblem {
+  width: 72px;
+  height: 72px;
+  background: radial-gradient(circle, #F9F1DB 0%, #E6D29D 100%);
+  border: 1px solid var(--color-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.25);
+  animation: emblemFloat 3s ease-in-out infinite alternate;
+}
+
+@keyframes emblemFloat {
+  0% { transform: translateY(0) scale(1); box-shadow: 0 8px 24px rgba(212, 175, 55, 0.25); }
+  100% { transform: translateY(-8px) scale(1.05); box-shadow: 0 16px 36px rgba(212, 175, 55, 0.4); }
+}
+
+/* Typography */
+.loader-title {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  color: var(--color-dark-brown);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
+}
+
+.loader-subtitle {
+  font-family: var(--font-accent);
+  font-size: 1.25rem;
+  color: var(--color-gold-dark);
+  font-style: italic;
+}
+
+.loader-baby-name {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+/* Progress Container */
+.loader-progress-wrapper {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.loader-progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: rgba(212, 175, 55, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.loader-progress-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #D4AF37 0%, #F5E6D3 50%, #D4AF37 100%);
+  border-radius: 20px;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+}
+
+.loader-percentage {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-soft-brown);
+  letter-spacing: 0.05em;
+}
+
+/* Start Button (Morphs from loader) */
+.loader-start-btn {
+  display: none;
+  opacity: 0;
+  width: 100%;
+  padding: 1.1rem 2rem;
+  background: linear-gradient(135deg, #D4AF37 0%, #B89228 100%);
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.05em;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+  transition: transform 0.3s var(--transition-smooth), box-shadow 0.3s var(--transition-smooth);
+}
+
+.loader-start-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 40px rgba(212, 175, 55, 0.6);
+}
+
+/* Curtain Exit Animation */
+.loader-curtain-exit {
+  animation: curtainFadeOut 1.2s var(--transition-smooth) forwards;
+}
+
+@keyframes curtainFadeOut {
+  0% { opacity: 1; transform: scale(1); filter: blur(0px); }
+  100% { opacity: 0; transform: scale(1.08); filter: blur(10px); pointer-events: none; }
+}

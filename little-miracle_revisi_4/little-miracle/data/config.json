@@ -1,0 +1,24 @@
+{
+  "theme": {
+    "primaryColor": "#d4af37",
+    "secondaryColor": "#f8f5f0",
+    "accentColor": "#8c6d46",
+    "darkColor": "#1a1816",
+    "autoPlayAudio": true
+  },
+  "audio": {
+    "bgm": "assets/music/lullaby_piano.mp3",
+    "volume": 0.6
+  },
+  "scenes": {
+    "loader": true,
+    "opening": true,
+    "hero": true,
+    "timeline": true,
+    "gallery": true,
+    "video": true,
+    "milestone": true,
+    "ending": true
+  }
+}
+
